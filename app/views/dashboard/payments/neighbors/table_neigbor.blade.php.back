@@ -1,0 +1,114 @@
+
+		 <div class="estado-cuenta table-responsive">
+
+			 <h4 style="float: left;" > <u> {{$neighbor->Neighbors->name}} {{$neighbor->Neighbors->last_name}} </u></h4>
+			 <br>
+
+			 <table class="table table-condensed table-striped">
+			 	<colgroup>
+			 		<col class="col-xs-2">
+					<col class="col-xs-1">
+			 	</colgroup>
+
+				<thead>
+					<tr>
+						<th>Info.</th>
+						<th>Ene</th>
+						<th>Feb</th>
+						<th>Mar</th>
+						<th>Abr</th>
+						<th>May</th>
+						<th>Jun</th>
+						<th>Jul</th>
+						<th>Ago</th>
+						<th>Sep</th>
+						<th>Oct</th>
+						<th>Nov</th>
+						<th>Dic</th>
+					</tr>
+
+					<tbody>
+						<tr>
+							<th>Saldo Anterior</th>
+							@for($j=0; $j<=11; $j++)
+								<?php
+								$color = "";
+								if ($saldoAnteriol[$j] < 0 ) {
+									 $color = 'red';
+								}
+								if ($saldoAnteriol[$j] == 0 ) {
+									 $color = 'black';
+								}
+								if ($saldoAnteriol[$j] > 0 ) {
+									 $color = 'blue';
+								}?>
+								@if($j+1 == $mes_ini)
+									<td style="color:black;  text-align: right;">{{$saldoAnteriol[$j] = 0}}</td>
+								@else
+								<td style="color:{{$color}}; text-align: right;">{{$saldoAnteriol[$j]}}</td>
+								@endif
+
+							@endfor
+						</tr>
+
+
+
+
+						<tr>
+							<th>Cuota del Mes</th>
+
+							@for($j=0; $j<=11; $j++)
+							<td style="color:red; text-align: right;">{{$cuataMes[$j]}}</td>
+
+							@endfor
+						</tr>
+
+						<tr>
+							<th>Total Debe</th>
+							@for($j=0; $j<=11; $j++)
+								<?php
+								$color = "";
+								if ($totalDebe[$j] < 0 ) {
+									 $color = 'red';
+								}
+								if ($totalDebe[$j] == 0 ) {
+									 $color = 'black';
+								}
+								if ($totalDebe[$j] > 0 ) {
+									 $color = 'blue';
+								}?>
+							<td style="color:{{$color}}; text-align: right;">{{$totalDebe[$j]}}</td>
+
+							@endfor
+						</tr>
+
+						<tr>
+							<th>Pagos</th>
+							@for($j=0; $j<=11; $j++)
+							<td style='color:green; text-align: right;'>{{$pagos[$j]}}</td>
+
+							@endfor
+						</tr>
+
+						<tr>
+							<th>Saldo Total</th>
+							@for($j=0; $j<=11; $j++)
+								<?php
+								$color = "";
+								if ($saldoTotal[$j] < 0  ) {
+									 $color = 'red';
+								}
+								if ($saldoTotal[$j] == 0 ) {
+									 $color = 'black';
+								}
+								if ($saldoTotal[$j] > 0 ) {
+									 $color = 'blue';
+								}?>
+							<td style="color:{{$color}}; text-align: right;">{{$saldoTotal[$j]}} </td>
+
+							@endfor
+						</tr>
+					</tbody>
+				</thead>
+			 </table>
+		 </div>

@@ -1,0 +1,31 @@
+body{
+	background-image		: url('../images/mail/header.jpg');
+	background-repeat		: no-repeat;
+	background-position		: center top;
+	background-attachment	: fixed;
+	font-family				: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size				: 12pt;
+}
+header{
+	font-size		: 30pt;
+	text-align		: right;
+	margin-right	: 26.5%;
+	font-style		: oblique;
+}
+
+table{
+	width			: 650px;
+	margin-top		: 5%;			
+}
+.divisor{
+	background-image: url('../images/mail/divisor.jpg');
+	height			: 30px;
+}
+
+p , a{
+	margin-left		: 5%;
+	margin-right	: 2%;
+}
+
+
+

@@ -1,0 +1,210 @@
+.text-red {
+	color: #d24d33
+}
+.text-dark-red {
+	color: #993838
+}
+.text-blue {
+	color: #5bc0de
+}
+.text-dark-blue {
+	color: #3b8dbd
+}
+
+
+/* ========================================================================
+ * 13. Examples, Code Highlight, CallOuts and other stuff
+ * ======================================================================== */
+
+
+
+
+.example {
+	position: relative;
+	padding: 35px 10px 10px;
+	margin: 0 -10px;
+	background-color: #f0f0ed;
+}
+.example:after {
+	content: "Example";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: #595f66;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.example + .highlight {
+	margin: 0 -10px 15px -10px;
+	border-radius: 0;
+	border-width: 0;
+}
+.highlight {
+	position: relative;
+	padding: 15px;
+	margin-bottom: 14px;
+	background-color: #454b52;
+}
+.highlight:after {
+	content: "";
+	position: absolute;
+	top: -7px;
+	left: 5%;
+	border-style: solid;
+	border-width: 0 7px 7px;
+	border-color: #454b52 transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+.highlight pre {
+	color: #f1f1f1;
+	font-weight: 600;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: 0;
+	white-space: nowrap;
+}
+.callout {
+	position: relative;
+	min-height: 60px;
+	margin: 10px 0 15px;
+	padding: 15px 30px 15px 60px;
+	border-left: 5px solid #eee;
+	font-size: 0.9em;
+}
+.inner-spacer .callout {
+	margin: 10px -10px 15px
+}
+.callout h4 {
+	margin-top: 0;
+}
+.callout p:last-child {
+	margin-bottom: 0;
+}
+.callout code,
+.callout .highlight {
+	background-color: #fff;
+}
+.callout-danger {
+	background-color: #F7E0DB;
+	border-color: #d24d33;
+}
+.callout-danger:before {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: block;
+	background: #d24d33;
+	border-radius: 50%;
+	color: #fff;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	font-size: 2.15em;
+	font-family: 'FontAwesome';
+	content: "\f0e7";
+}
+.callout-danger h4 {
+	color: #d24d33
+}
+.callout-warning {
+	background-color: #fff4e1;
+	border-color: #fdc153;
+}
+.callout-warning:before {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: block;
+	background: #fdc153;
+	border-radius: 50%;
+	color: #fff;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	font-size: 2.15em;
+	font-family: 'FontAwesome';
+	content: "\f071";
+}
+.callout-warning h4 {
+	color: #fcb42e
+}
+.callout-info {
+	background-color: #dff3f9;
+	border-color: #5bc0de;
+}
+.callout-info:before {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: block;
+	background: #5bc0de;
+	border-radius: 50%;
+	color: #fff;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+	font-size: 2.15em;
+	font-family: 'FontAwesome';
+	content: "\f0a2";
+}
+.callout-info h4 {
+	color: #5bc0de
+}
+.modal {
+	overflow: hidden;
+	overflow-y: hidden;
+	z-index:10000;
+}
+.modal-content {
+	position: relative;
+	border: 0;
+	border: 0;
+	border-radius: 6px;
+	border-bottom-left-radius: 11px;
+	border-bottom-right-radius: 11px;
+	outline: none;
+	-webkit-box-shadow: 0 0 0 6px rgba(0,0,0,.1);
+	box-shadow: 0 0 0 6px rgba(0,0,0,.1);
+}
+.modal-header {
+	padding: 15px;
+	border: 0;
+	background: rgba(0,0,0,.05)
+}
+.modal-header i {
+	font-size: 4em;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+	width: 80px;
+	display: block;
+	border-radius: 50%;
+	height: 80px;
+	margin: 0 auto;
+	background: #969fa1
+}
+.modal-header .close {
+	margin-top: -2px;
+}
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+.modal-body {
+	position: relative;
+	padding: 20px;
+}
+.modal-footer {
+	padding: 10px 20px 20px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-top: 15px;
+	text-align: right;
+	border: 0;
+}

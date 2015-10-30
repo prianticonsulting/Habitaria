@@ -1,0 +1,45 @@
+Sotware de administracion de colonias urbanizaciones
+
+Es un sistema publico es decir estara online.
+
+Colonias abiertas
+Colonia cerrada
+Edificio
+
+Todos tienen
+Mesa directiva-junta de condominio
+En ocasiones lo administra compañias externas.
+
+Software hecho para n colonias, cada colonia tendra su gestion interna.
+
+Login de usuarios con validar email.
+
+Roles:
+Administrador de sistemas
+Presidente de la colonia-El encargado de dar la cara a los vecinos puede cobrar y modificar cualquier parametro dentro de la colonia
+Cobrador- tiene los privilegios de que puede recibir pagos de los vecinos, los pagos al realizarlos se envian recibos por correo.
+Comprador-el que adquiere o paga cosas para la colonia, ejemplo guardias de la caseta, registrar que esta saliendo dinero.
+Vecino-ingresa a la aplicacion para ver su estado de cuenta y el estado de cuenta general de la colonia de como van los ingresos y de como van los gastos
+Una persona puede tener varios perfiles.
+
+En cada colonia hay calles y hay casas.
+
+Una tabla que se relacione con urbanizacion
+
+En una colonia son calles.
+En un edificio son pisos.
+
+Colonia juarez, calle maturin numero 12
+Edificio Juarez, piso 3, departamento 5
+
+Los usuarios pueden tener casas en una o mas urbanizaciones
+
+Si estoy dado de alta aen mas de una colonia pregunta a cual quiere ingresar.
+
+Cada domicilio pueden vivir una o mas personas.
+
+si una colonia quiere cambiar la cuota debe serpara un mes compleja
+
+
+
+
