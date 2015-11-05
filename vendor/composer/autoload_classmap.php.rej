@@ -1,0 +1,9 @@
+diff a/vendor/composer/autoload_classmap.php b/vendor/composer/autoload_classmap.php	(rejected hunks)
+@@ -13,7 +13,6 @@
+     'AssignedRoleTableSeeder' => $baseDir . '/app/database/seeds/AssignedRoleTableSeeder.php',
+     'Balance' => $baseDir . '/app/models/Balance.php',
+     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
+-    'Boris\\CLIOptionsHandler' => $vendorDir . '/d11wtq/boris/lib/Boris/CLIOptionsHandler.php',
+     'BuildingCatalog' => $baseDir . '/app/models/BuildingCatalog.php',
+     'City' => $baseDir . '/app/models/City.php',
+     'Collector' => $baseDir . '/app/models/Collector.php',
