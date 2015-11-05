@@ -13,20 +13,20 @@
 
 //============ Bloque excepciones
 
-// App::error(function($exception, $code)
-// 	{
-// 		switch ($code)
-// 		{
-// 			case 404:
-// 			return Response::view('users.admin404');
-//
-// 			case 500:
-//             return Response::view('users.admin500');
-//
-// 			default:
-//             return Response::view('users.login');
-// 		}
-// 	});
+App::error(function($exception, $code)
+	{
+		switch ($code)
+		{
+			case 404:
+			return Response::view('users.admin404');
+
+			case 500:
+            return Response::view('users.admin500');
+
+			default:
+            return Response::view('users.login');
+		}
+	});
 
 //============INDEX
 

@@ -261,9 +261,9 @@
 				</li>-->
 
                 <li>
-					<a class="{{Route::currentRouteName() == ('config.colony.suggestion') ? 'active open' : '' }}" href="{{URL::route('suggestions')}}">
+					<a class="{{Route::currentRouteName() == ('suggestions') ? 'active open' : '' }}" href="{{URL::route('suggestions')}}">
 					<i class="fa fa fa-envelope"></i><span>Sugerencias</span></a>
-				</li>-
+				</li>
 
 			</ul>
         </li>
